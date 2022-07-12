@@ -1,0 +1,55 @@
+@import '../base/colors';
+
+#header{
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+
+    .header__nav{
+        background-color: $color-head2;
+
+        @media( min-width: 960px){
+            background-color: transparent;
+        }
+    }
+
+    .header__container{
+        height: 400px;
+        background-color: $color-head;
+
+        
+
+
+        .header__container__title{
+            color: $color-white;
+        }
+
+        .header__container__logo{
+            border: 10px solid $color-white;
+            z-index: 1;
+            width: 178px;
+            height: 178px;
+            background-color: $color-white;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            @media( min-width: 960px){
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        @media( min-width: 960px){
+            height: 612px;
+        }
+    }
+
+    .abajo{
+        background-color: $color-head2;
+    }
+
+}
+
+#header2{
+    opacity: .8;
+    .header__nav{
+        background-color: $color-head2;
+    }
+}

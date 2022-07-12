@@ -1,0 +1,42 @@
+@import '../base/colors';
+
+#footer{
+    background-image: url('../img/fondo.jpg');
+    position: relative;
+
+    .footer__fondo{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $color-black2;
+    }
+
+    .container-lg{
+        height: 100px;
+
+        .row{
+
+            ul{
+                z-index: 1;
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $color-white;
+                        cursor: pointer;
+
+                        img{
+                            border-radius: 5px;
+                        }
+    
+                        &:hover{
+                            img{
+                                filter: invert(48%) sepia(95%) saturate(338%) hue-rotate(78deg) brightness(96%) contrast(86%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
